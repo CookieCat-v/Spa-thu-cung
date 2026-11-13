@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Mx3g9IE2vi4=",
+  "dgSpecHash": "2tQBnQG2HtE=",
   "success": true,
   "projectFilePath": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\QuanLy.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\TUF\\.nuget\\packages\\materialdesigncolors\\5.4.0\\materialdesigncolors.5.4.0.nupkg.sha512",
+    "C:\\Users\\TUF\\.nuget\\packages\\materialdesignthemes\\5.4.0\\materialdesignthemes.5.4.0.nupkg.sha512",
+    "C:\\Users\\TUF\\.nuget\\packages\\microsoft.xaml.behaviors.wpf\\1.1.142\\microsoft.xaml.behaviors.wpf.1.1.142.nupkg.sha512"
+  ],
   "logs": []
 }
