@@ -19,6 +19,37 @@
                 <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/Recommended/Secondary/MaterialDesignColor.Lime.xaml" />
 
             </ResourceDictionary.MergedDictionaries>
+
+            <Style x:Key="SidebarButtonStyle"
+       TargetType="Button"
+       BasedOn="{StaticResource MaterialDesignFlatButton}">
+
+                <Setter Property="HorizontalContentAlignment"
+            Value="Left"/>
+
+                <Setter Property="Padding"
+            Value="15"/>
+
+                <Setter Property="Margin"
+            Value="0,0,0,8"/>
+
+                <Setter Property="Foreground"
+            Value="#665577"/>
+
+                <Setter Property="FontSize"
+            Value="14"/>
+
+                <Setter Property="Height"
+            Value="48"/>
+
+            </Style>
+
+            <SolidColorBrush x:Key="PrimaryColor"
+                             Color="#8064A2"/>
+            <SolidColorBrush x:Key="SecondaryColor"
+                             Color="#F3EAFB"/>
+            <SolidColorBrush x:Key="BackgroundColor"
+                             Color="#F8F7FA"/>
             <sys:Double x:Key="ButtonWidth">150</sys:Double>
         </ResourceDictionary>
     </Application.Resources>
