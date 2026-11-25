@@ -3,40 +3,84 @@
   "WorkspaceRootPath": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\pages\\appointmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\pages\\appointmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\pages\\petpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\pages\\petpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\pages\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\pages\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\mainmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\mainmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\mainmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\mainmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\viewmodels\\mainmenuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:viewmodels\\mainmenuviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\customerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\customerdashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\loginwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\navigationbuttonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:navigationbuttonconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:viewmodels\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\loginwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\pages\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\pages\\dashboardpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\pages\\appointmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\pages\\appointmentpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\pages\\dashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\pages\\dashboardpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\pages\\appointmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\pages\\appointmentpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:models\\appointment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\services\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:services\\authentication.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\customerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\customerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\pages\\petpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\pages\\petpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\TUF\\AppData\\Local\\Temp\\.vsdbgsrc\\8646a45aed9b4ef7416dfd57c3236af05a7ffe9a232b7b6c9cfed2434fb72a85\\ResourcePart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -60,10 +104,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\quanly.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:quanly.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|d:\\study\\it008\\spa thu cung\\quanly\\views\\customerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B91EB291-10B2-3C1B-279B-95C2EF5FB637}|QuanLy.csproj|solutionrelative:views\\customerdashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -73,7 +113,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,19 +121,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MainMenu.xaml",
-              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\MainMenu.xaml",
-              "RelativeDocumentMoniker": "Views\\MainMenu.xaml",
-              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\MainMenu.xaml",
-              "RelativeToolTip": "Views\\MainMenu.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-24T08:10:26.859Z",
+              "DocumentIndex": 1,
+              "Title": "MainMenu.xaml.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\MainMenu.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\MainMenu.xaml.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\MainMenu.xaml.cs",
+              "RelativeToolTip": "Views\\MainMenu.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAiwDsAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T04:29:30.43Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
+              "Title": "MainMenuViewModel.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\ViewModels\\MainMenuViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\MainMenuViewModel.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\ViewModels\\MainMenuViewModel.cs",
+              "RelativeToolTip": "ViewModels\\MainMenuViewModel.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAA9wAoAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T04:35:36.299Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "LoginWindow.xaml",
               "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\LoginWindow.xaml",
               "RelativeDocumentMoniker": "Views\\LoginWindow.xaml",
@@ -106,54 +160,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "DashboardPage.xaml",
-              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\DashboardPage.xaml",
-              "RelativeDocumentMoniker": "Views\\Pages\\DashboardPage.xaml",
-              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\DashboardPage.xaml",
-              "RelativeToolTip": "Views\\Pages\\DashboardPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-24T08:08:57.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PetPage.xaml",
-              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\PetPage.xaml",
-              "RelativeDocumentMoniker": "Views\\Pages\\PetPage.xaml",
-              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\PetPage.xaml",
-              "RelativeToolTip": "Views\\Pages\\PetPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-24T08:09:34.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AppointmentPage.xaml",
-              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\AppointmentPage.xaml",
-              "RelativeDocumentMoniker": "Views\\Pages\\AppointmentPage.xaml",
-              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\AppointmentPage.xaml",
-              "RelativeToolTip": "Views\\Pages\\AppointmentPage.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-24T08:09:22.479Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\App.xaml",
-              "RelativeDocumentMoniker": "App.xaml",
-              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\App.xaml",
-              "RelativeToolTip": "App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2026-11-12T03:29:45.571Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "CustomerDashboard.xaml",
               "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\CustomerDashboard.xaml",
               "RelativeDocumentMoniker": "Views\\CustomerDashboard.xaml",
@@ -165,20 +171,209 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainMenu.xaml",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\MainMenu.xaml",
+              "RelativeDocumentMoniker": "Views\\MainMenu.xaml",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\MainMenu.xaml",
+              "RelativeToolTip": "Views\\MainMenu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-24T08:10:26.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "LoginWindow.xaml.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\LoginWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\LoginWindow.xaml.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\LoginWindow.xaml.cs",
+              "RelativeToolTip": "Views\\LoginWindow.xaml.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwCoAAABZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-12T04:03:14.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\App.xaml.cs",
               "RelativeDocumentMoniker": "App.xaml.cs",
               "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\App.xaml.cs",
               "RelativeToolTip": "App.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAkwEAAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-11-12T03:29:08.474Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoginViewModel.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\ViewModels\\LoginViewModel.cs",
+              "RelativeDocumentMoniker": "ViewModels\\LoginViewModel.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\ViewModels\\LoginViewModel.cs",
+              "RelativeToolTip": "ViewModels\\LoginViewModel.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAIwCEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T03:15:54.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "NavigationButtonConverter.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\NavigationButtonConverter.cs",
+              "RelativeDocumentMoniker": "NavigationButtonConverter.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\NavigationButtonConverter.cs",
+              "RelativeToolTip": "NavigationButtonConverter.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T05:03:15.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "AssemblyInfo.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\AssemblyInfo.cs",
+              "RelativeToolTip": "AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T04:41:42.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "DashboardPage.xaml",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\DashboardPage.xaml",
+              "RelativeDocumentMoniker": "Views\\Pages\\DashboardPage.xaml",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\DashboardPage.xaml",
+              "RelativeToolTip": "Views\\Pages\\DashboardPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-24T08:08:57.864Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 11,
+              "Title": "AppointmentPage.xaml",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\AppointmentPage.xaml",
+              "RelativeDocumentMoniker": "Views\\Pages\\AppointmentPage.xaml",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\AppointmentPage.xaml",
+              "RelativeToolTip": "Views\\Pages\\AppointmentPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-24T08:09:22.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DashboardPage.xaml.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\DashboardPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Pages\\DashboardPage.xaml.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\DashboardPage.xaml.cs",
+              "RelativeToolTip": "Views\\Pages\\DashboardPage.xaml.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAQwEAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T04:32:56.055Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppointmentPage.xaml.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\AppointmentPage.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\Pages\\AppointmentPage.xaml.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\AppointmentPage.xaml.cs",
+              "RelativeToolTip": "Views\\Pages\\AppointmentPage.xaml.cs",
+              "ViewState": "AgIAAGwAAAAAAAAAAAAQwDoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T04:31:22.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Appointment.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Models\\Appointment.cs",
+              "RelativeDocumentMoniker": "Models\\Appointment.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Models\\Appointment.cs",
+              "RelativeToolTip": "Models\\Appointment.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T04:31:35.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CustomerDashboard.xaml.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\CustomerDashboard.xaml.cs",
+              "RelativeDocumentMoniker": "Views\\CustomerDashboard.xaml.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\CustomerDashboard.xaml.cs",
+              "RelativeToolTip": "Views\\CustomerDashboard.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-10T05:26:05.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Authentication.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Services\\Authentication.cs",
+              "RelativeDocumentMoniker": "Services\\Authentication.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Services\\Authentication.cs",
+              "RelativeToolTip": "Services\\Authentication.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAuwBMAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T03:06:58.627Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "User.cs",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Models\\User.cs",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Models\\User.cs",
+              "RelativeToolTip": "Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-25T03:10:49.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\App.xaml",
+              "RelativeDocumentMoniker": "App.xaml",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\App.xaml",
+              "RelativeToolTip": "App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-12T03:29:45.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PetPage.xaml",
+              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\PetPage.xaml",
+              "RelativeDocumentMoniker": "Views\\Pages\\PetPage.xaml",
+              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\Pages\\PetPage.xaml",
+              "RelativeToolTip": "Views\\Pages\\PetPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-11-24T08:09:34.802Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "FieldsViewModel.cs",
               "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\ViewModels\\FieldsViewModel.cs",
               "RelativeDocumentMoniker": "ViewModels\\FieldsViewModel.cs",
@@ -190,7 +385,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "ViewModelBase.cs",
               "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\ViewModels\\ViewModelBase.cs",
               "RelativeDocumentMoniker": "ViewModels\\ViewModelBase.cs",
@@ -202,7 +397,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 20,
               "Title": "ResourcePart.cs",
               "DocumentMoniker": "C:\\Users\\TUF\\AppData\\Local\\Temp\\.vsdbgsrc\\8646a45aed9b4ef7416dfd57c3236af05a7ffe9a232b7b6c9cfed2434fb72a85\\ResourcePart.cs",
               "ToolTip": "C:\\Users\\TUF\\AppData\\Local\\Temp\\.vsdbgsrc\\8646a45aed9b4ef7416dfd57c3236af05a7ffe9a232b7b6c9cfed2434fb72a85\\ResourcePart.cs [Read Only]",
@@ -213,20 +408,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "LoginWindow.xaml.cs",
-              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\LoginWindow.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\LoginWindow.xaml.cs",
-              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\LoginWindow.xaml.cs",
-              "RelativeToolTip": "Views\\LoginWindow.xaml.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAADgvxoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T04:03:14.758Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "RelayCommand.cs",
               "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Commands\\RelayCommand.cs",
               "RelativeDocumentMoniker": "Commands\\RelayCommand.cs",
@@ -234,12 +416,11 @@
               "RelativeToolTip": "Commands\\RelayCommand.cs",
               "ViewState": "AgIAAAEAAAAAAAAAAADwvxsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-12T03:21:07.144Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-11-12T03:21:07.144Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 23,
               "Title": "NotEmptyValidationRule.cs",
               "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\ViewModels\\NotEmptyValidationRule.cs",
               "RelativeDocumentMoniker": "ViewModels\\NotEmptyValidationRule.cs",
@@ -251,7 +432,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 25,
               "Title": "QuanLy.csproj",
               "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\QuanLy.csproj",
               "RelativeDocumentMoniker": "QuanLy.csproj",
@@ -260,19 +441,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-11-12T03:19:54.959Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CustomerDashboard.xaml.cs",
-              "DocumentMoniker": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\CustomerDashboard.xaml.cs",
-              "RelativeDocumentMoniker": "Views\\CustomerDashboard.xaml.cs",
-              "ToolTip": "D:\\study\\IT008\\Spa thu cung\\QuanLy\\Views\\CustomerDashboard.xaml.cs",
-              "RelativeToolTip": "Views\\CustomerDashboard.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-11-10T05:26:05.985Z",
-              "EditorCaption": ""
             }
           ]
         }

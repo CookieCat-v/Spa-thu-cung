@@ -1,4 +1,7 @@
-﻿using System;
+﻿using Microsoft.Extensions.DependencyInjection;
+using QuanLy.Models;
+using QuanLy.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
@@ -17,11 +20,42 @@ namespace QuanLy.Views
     /// </summary>
     public partial class LoginWindow : Window
     {
-        public LoginWindow()
+        private readonly IServiceProvider _services;
+        public LoginWindow(LoginViewModel vm,IServiceProvider services)
         {
             InitializeComponent();
+            _services = services;
+            DataContext = vm;
+            
+            vm.LoginSuccess += OnLoginSuccess;
         }
-
+        private void OnLoginSuccess(User user)
+        {
+            Window mainWindow;
+             if (user.Role == UserRole.Customer)
+             {
+                  mainWindow =
+            ActivatorUtilities.CreateInstance<MainWindow>(
+                _services, user);
+             }
+             else
+             {
+                 mainWindow = ActivatorUtilities.CreateInstance<MainMenu>(_services, user);
+             } 
+             Application.Current.MainWindow = mainWindow;
+             mainWindow.Show();
+             Close(); 
+           
+        }
+        private void PasswordBox_PasswordChanged(
+    object sender,
+    RoutedEventArgs e)
+        {
+            if (this.DataContext != null)
+            {
+                ((dynamic)this.DataContext).Password = ((PasswordBox)sender).Password;
+            }
+        }
         private void NameTextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 

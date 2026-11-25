@@ -1,5 +1,7 @@
-﻿using System;
+﻿using QuanLy.Models;
+using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -21,6 +23,44 @@ namespace QuanLy.Views.Pages
         public DashboardPage()
         {
             InitializeComponent();
+
+            LoadRecentAppointments();
+        }
+
+        private void LoadRecentAppointments()
+        {
+            var appointments = new ObservableCollection<Appointment>
+            {
+                new Appointment
+                {
+                    CustomerName = "Nguyen Van A",
+                    PetName = "Lucky",
+                    ServiceName = "Bath & Cleaning",
+                    AppointmentDate = DateTime.Today,
+                    Status = "Pending"
+                },
+
+                new Appointment
+                {
+                    CustomerName = "Tran Thi B",
+                    PetName = "Mimi",
+                    ServiceName = "Haircut & Styling",
+                    AppointmentDate = DateTime.Today.AddDays(1),
+                    Status = "Confirmed"
+                },
+
+                new Appointment
+                {
+                    CustomerName = "Le Van C",
+                    PetName = "Max",
+                    ServiceName = "Nail & Paw Care",
+                    AppointmentDate = DateTime.Today.AddDays(2),
+                    Status = "Completed"
+                }
+            };
+
+            RecentAppointmentsGrid.ItemsSource =
+                appointments.Take(5);
         }
     }
 }

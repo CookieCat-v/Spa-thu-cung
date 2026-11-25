@@ -2,6 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:QuanLy"
         Title="PawSpa - Employee Dashboard"
         Height="850"
         Width="1400"
@@ -9,7 +10,64 @@
         MinWidth="1100"
         WindowStartupLocation="CenterScreen"
         Background="#F7F6FA">
+    <Window.Resources>
+        <local:NavigationButtonConverter x:Key="NavigationButtonConverter"/>
+        <Style x:Key="SidebarButtonStyle"
+       TargetType="Button">
 
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="#8064A2"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Padding" Value="15"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="Height" Value="48"/>
+            <Setter Property="Cursor" Value="Hand"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border x:Name="ButtonBorder"
+                        Background="{TemplateBinding Background}"
+                        CornerRadius="8"
+                        Padding="{TemplateBinding Padding}">
+
+                            <ContentPresenter
+                        HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                        VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+
+            <Style.Triggers>
+
+                <!-- Hover state -->
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="Background" Value="#EDE7F6"/>
+                    <Setter Property="Foreground" Value="#8064A2"/>
+                </Trigger>
+
+                <!-- Selected page state -->
+                <DataTrigger Value="True">
+                    <DataTrigger.Binding>
+                        <MultiBinding Converter="{StaticResource NavigationButtonConverter}">
+                            <Binding Path="DataContext.SelectedPage"
+                             RelativeSource="{RelativeSource AncestorType=Window}"/>
+                            <Binding Path="Tag"
+                             RelativeSource="{RelativeSource Self}"/>
+                        </MultiBinding>
+                    </DataTrigger.Binding>
+
+                    <Setter Property="Background" Value="#8064A2"/>
+                    <Setter Property="Foreground" Value="White"/>
+                </DataTrigger>
+
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="240"/>
@@ -50,34 +108,32 @@
                     <!-- DASHBOARD -->
                     <Button Content="Dashboard"
                             Tag="Dashboard"
+                            CommandParameter="Dashboard"
                             Style="{StaticResource SidebarButtonStyle}"
-                            
-                            Background="#8064A2"
-                            Foreground="White"/>
+                            Command="{Binding NavigationCommand}"
+                            />
 
                     <!-- APPOINTMENTS -->
                     <Button Content="Appointments"
                             Tag="Appointments"
+                            CommandParameter="Appointments"
                             Style="{StaticResource SidebarButtonStyle}"
+                             Command="{Binding NavigationCommand}"
                            />
 
                     <!-- CUSTOMERS -->
-                    <Button Content="Customers"
-                            Tag="Customers"
-                            Style="{StaticResource SidebarButtonStyle}"
-                            />
+                    
 
                     <!-- PETS -->
                     <Button Content="Pets"
                             Tag="Pets"
+                            CommandParameter="Pets"
                             Style="{StaticResource SidebarButtonStyle}"
+                             Command="{Binding NavigationCommand}"
                             />
 
                     <!-- SERVICES -->
-                    <Button Content="Services"
-                            Tag="Services"
-                            Style="{StaticResource SidebarButtonStyle}"
-                            />
+                  
 
                 </StackPanel>
 
@@ -114,7 +170,9 @@
 
                     <Button Content="Logout"
                             Tag="Logout"
+                            CommandParameter="Logout"
                             Style="{StaticResource SidebarButtonStyle}"
+                            Command="{Binding NavigationCommand}"
                             />
 
                 </StackPanel>

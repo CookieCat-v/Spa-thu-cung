@@ -37,3 +37,14 @@ D:\study\IT008\Spa thu cung\QuanLy\obj\Debug\net10.0-windows\Views\Pages\PetPage
 D:\study\IT008\Spa thu cung\QuanLy\obj\Debug\net10.0-windows\Views\Pages\AppointmentPage.baml
 D:\study\IT008\Spa thu cung\QuanLy\obj\Debug\net10.0-windows\Views\Pages\DashboardPage.baml
 D:\study\IT008\Spa thu cung\QuanLy\obj\Debug\net10.0-windows\Views\Pages\PetPage.baml
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.dll
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\Microsoft.Extensions.Logging.Debug.dll
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\Microsoft.Extensions.Options.dll
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\Microsoft.Extensions.Primitives.dll
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\Serilog.dll
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\Serilog.Extensions.Logging.dll
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\Serilog.Sinks.File.dll
+D:\study\IT008\Spa thu cung\QuanLy\bin\Debug\net10.0-windows\System.Diagnostics.DiagnosticSource.dll
