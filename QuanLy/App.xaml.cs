@@ -1,13 +1,15 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using QuanLy.Data;
+using QuanLy.Services;
+using QuanLy.ViewModels;
+using QuanLy.Views;
+using QuanLy.Views.Pages;
 using Serilog;
 using System.Configuration;
 using System.Data;
-using System.Windows;
 using System.IO;
-using QuanLy.ViewModels;
-using QuanLy.Services;
-using QuanLy.Views;
+using System.Windows;
 namespace QuanLy
 {
     /// <summary>
@@ -35,6 +37,10 @@ namespace QuanLy
 
         protected override void OnStartup(StartupEventArgs e)
         {
+            using (var context = new AppDbContext())
+            {
+                context.Database.EnsureCreated();
+            }
             var logDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log");
 
             Log.Logger = new LoggerConfiguration()
@@ -60,13 +66,18 @@ namespace QuanLy
 
             
             services.AddSingleton<Authentication>();
-
+            services.AddSingleton<AppointmentService>();
             //services.AddTransient<ValidatableViewModel>();
+            services.AddTransient<CustomerDashboardViewModel>();
+
             services.AddTransient<MainMenuViewModel>();
             services.AddTransient<LoginViewModel>();
             services.AddTransient<MainWindow>();
             services.AddTransient<LoginWindow>();
             services.AddTransient<MainMenu>();
+            services.AddTransient<AppointmentPage>();
+            services.AddTransient<DashboardPage>();
+            services.AddTransient<PetPage>();
             _services = services.BuildServiceProvider();
             _services.GetRequiredService<ILogger<App>>()
             .LogInformation("Application started.");

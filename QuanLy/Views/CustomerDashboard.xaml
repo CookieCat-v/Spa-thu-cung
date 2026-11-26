@@ -337,6 +337,7 @@
                                 <TextBox x:Name="PetNameTextBox"
                                          Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                          ToolTip="Enter your pet's name"
+                                         Text="{Binding SelectedAppointment.PetName,UpdateSourceTrigger=PropertyChanged}"
                                          Margin="0,0,0,15"/>
 
                                 <TextBlock Text="Pet Type"
@@ -346,6 +347,8 @@
                                 <ComboBox x:Name="PetTypeComboBox"
                                           Style="{StaticResource MaterialDesignOutlinedComboBox}"
                                           ToolTip="Select pet type"
+                                           SelectedValuePath="Content"
+                                          SelectedValue="{Binding SelectedAppointment.PetType,UpdateSourceTrigger=PropertyChanged}"
                                           Margin="0,0,0,15">
                                     <ComboBoxItem Content="Dog"/>
                                     <ComboBoxItem Content="Cat"/>
@@ -358,6 +361,8 @@
 
                                 <ComboBox x:Name="ServiceComboBox"
                                           Style="{StaticResource MaterialDesignOutlinedComboBox}"
+                                          SelectedValuePath="Content"
+                                          SelectedValue="{Binding SelectedAppointment.ServiceName,UpdateSourceTrigger=PropertyChanged}"
                                           ToolTip="Select a service"
                                           Margin="0,0,0,15">
                                     <ComboBoxItem Content="Bath &amp; Cleaning"/>
@@ -378,15 +383,18 @@
                                 <TextBox x:Name="CustomerNameTextBox"
                                          Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                          ToolTip="Enter your name"
+                                         Text="{Binding SelectedAppointment.CustomerName,UpdateSourceTrigger=PropertyChanged}"
                                          Margin="0,0,0,15"/>
 
                                 <TextBlock Text="Phone Number"
                                            FontWeight="SemiBold"
+                                          
                                            Margin="0,0,0,5"/>
 
                                 <TextBox x:Name="PhoneTextBox"
                                          Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                          ToolTip="Enter your phone number"
+                                          Text="{Binding SelectedAppointment.Phone,UpdateSourceTrigger=PropertyChanged}"
                                          Margin="0,0,0,15"/>
 
                                 <TextBlock Text="Appointment Date"
@@ -395,6 +403,7 @@
 
                                 <DatePicker x:Name="AppointmentDatePicker"
                                             Style="{StaticResource MaterialDesignOutlinedDatePicker}"
+                                            Text="{Binding SelectedAppointment.AppointmentDate,UpdateSourceTrigger=PropertyChanged}"
                                             SelectedDateFormat="Long"
                                             Margin="0,0,0,15"/>
 
@@ -408,6 +417,7 @@
                         <TextBox x:Name="NotesTextBox"
                                  Style="{StaticResource MaterialDesignOutlinedTextBox}"
                                  ToolTip="Special requests or information about your pet..."
+                                 Text="{Binding SelectedAppointment.Notes, UpdateSourceTrigger=PropertyChanged}"
                                  AcceptsReturn="True"
                                  TextWrapping="Wrap"
                                  MinHeight="80"
@@ -419,6 +429,7 @@
                                 Foreground="White"
                                 Padding="20,0"
                                 HorizontalAlignment="Right"
+                                Command="{Binding BookAppointmentCommand}"
                                 />
 
                     </StackPanel>

@@ -110,7 +110,7 @@
                         <Button Content="View All"
                                 HorizontalAlignment="Right"
                                 Style="{StaticResource MaterialDesignRaisedButton}"
-                                Foreground="#8064A2"/>
+                                Foreground="White"/>
                     </Grid>
 
                     <DataGrid x:Name="RecentAppointmentsGrid"

@@ -1,4 +1,5 @@
 ﻿using QuanLy.Models;
+using QuanLy.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -18,46 +19,23 @@ namespace QuanLy.Views.Pages
     /// <summary>
     /// Interaction logic for DashboardPage.xaml
     /// </summary>
+    
     public partial class DashboardPage : Page
     {
-        public DashboardPage()
+        private readonly AppointmentService _appointmentService;
+       
+        public DashboardPage(  AppointmentService appointmentService)
         {
             InitializeComponent();
-
+       
+            _appointmentService = appointmentService;
             LoadRecentAppointments();
         }
 
         private void LoadRecentAppointments()
         {
-            var appointments = new ObservableCollection<Appointment>
-            {
-                new Appointment
-                {
-                    CustomerName = "Nguyen Van A",
-                    PetName = "Lucky",
-                    ServiceName = "Bath & Cleaning",
-                    AppointmentDate = DateTime.Today,
-                    Status = "Pending"
-                },
-
-                new Appointment
-                {
-                    CustomerName = "Tran Thi B",
-                    PetName = "Mimi",
-                    ServiceName = "Haircut & Styling",
-                    AppointmentDate = DateTime.Today.AddDays(1),
-                    Status = "Confirmed"
-                },
-
-                new Appointment
-                {
-                    CustomerName = "Le Van C",
-                    PetName = "Max",
-                    ServiceName = "Nail & Paw Care",
-                    AppointmentDate = DateTime.Today.AddDays(2),
-                    Status = "Completed"
-                }
-            };
+            var appointments = new ObservableCollection<Appointment>(_appointmentService.GetAppointment());
+           
 
             RecentAppointmentsGrid.ItemsSource =
                 appointments.Take(5);

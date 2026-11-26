@@ -1,5 +1,7 @@
-﻿using QuanLy.Models;
+﻿using Microsoft.Extensions.DependencyInjection;
+using QuanLy.Models;
 using QuanLy.ViewModels;
+using QuanLy.Views.Pages;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,13 +25,16 @@ namespace QuanLy.Views
     public partial class MainMenu : Window
     {
         private readonly MainMenuViewModel _vm;
+        private readonly IServiceProvider _services;
         public MainMenu(User user, IServiceProvider services, MainMenuViewModel vm)
         {
             InitializeComponent();
             _vm = vm;
+            _services = services;
             DataContext = _vm;
             _vm.NavigationRequested += NavigateToPage;
-            MainFrame.Navigate(new Views.Pages.DashboardPage());
+             MainFrame.Navigate(services.GetRequiredService<DashboardPage>());
+           // MainFrame.Navigate(new Views.Pages.PetPage());
         }
         private void NavigateToPage(string page)
         {
@@ -37,17 +42,17 @@ namespace QuanLy.Views
             switch (page)
             {
                 case "Dashboard":
-                    MainFrame.Navigate(new Views.Pages.DashboardPage());
+                    MainFrame.Navigate(_services.GetRequiredService<DashboardPage>());
                     break;
 
                 case "Appointments":
-                    MainFrame.Navigate(new Views.Pages.AppointmentPage());
+                    MainFrame.Navigate(_services.GetRequiredService<AppointmentPage>());
                     break;
 
                 
 
                 case "Pets":
-                    MainFrame.Navigate(new Views.Pages.PetPage());
+                    MainFrame.Navigate(_services.GetRequiredService<PetPage>());
                     break;
 
                 case "Logout":

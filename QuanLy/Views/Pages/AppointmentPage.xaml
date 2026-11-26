@@ -43,15 +43,15 @@
                          Grid.Column="0"
                          Style="{StaticResource MaterialDesignOutlinedTextBox}"
                          ToolTip="Search customer, pet or phone..."
-                         
+                         TextChanged="SearchTextBox_TextChanged"
                          Margin="0,0,15,0"/>
 
                 <ComboBox x:Name="StatusFilter"
                           Grid.Column="1"
                           Style="{StaticResource MaterialDesignOutlinedComboBox}"
                           SelectedIndex="0"
-                         
-                          Margin="0,0,15,0">
+                         SelectionChanged="StatusFilter_SelectionChanged"
+                          Margin="0,0,15,0" VerticalAlignment="Bottom">
 
                     <ComboBoxItem Content="All Status"/>
                     <ComboBoxItem Content="Pending"/>
@@ -63,6 +63,7 @@
 
                 <Button Grid.Column="2"
                         Content="Refresh"
+                        Click="Refresh_Click"
                         Style="{StaticResource MaterialDesignOutlinedButton}"
                        />
 

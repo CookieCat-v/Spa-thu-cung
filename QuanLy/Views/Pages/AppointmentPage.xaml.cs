@@ -1,4 +1,5 @@
 ﻿using QuanLy.Models;
+using QuanLy.Services;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -23,67 +24,20 @@ namespace QuanLy.Views.Pages
     {
         private ObservableCollection<Appointment> _appointments;
         private ICollectionView _appointmentView;
+       
+        private readonly AppointmentService _appointmentService;
 
-        public AppointmentPage()
+        public AppointmentPage( AppointmentService appointmentService )
         {
             InitializeComponent();
-
+  
+            _appointmentService = appointmentService;
             LoadAppointments();
         }
 
         private void LoadAppointments()
         {
-            _appointments = new ObservableCollection<Appointment>
-            {
-                new Appointment
-                {
-                    Id = 1,
-                    CustomerName = "Nguyen Van A",
-                    Phone = "0901234567",
-                    PetName = "Lucky",
-                    PetType = "Dog",
-                    ServiceName = "Bath & Cleaning",
-                    AppointmentDate = DateTime.Today,
-                    Status = "Pending",
-                    Notes = "Sensitive skin"
-                },
-
-                new Appointment
-                {
-                    Id = 2,
-                    CustomerName = "Tran Thi B",
-                    Phone = "0912345678",
-                    PetName = "Mimi",
-                    PetType = "Cat",
-                    ServiceName = "Haircut & Styling",
-                    AppointmentDate = DateTime.Today.AddDays(1),
-                    Status = "Confirmed"
-                },
-
-                new Appointment
-                {
-                    Id = 3,
-                    CustomerName = "Le Van C",
-                    Phone = "0923456789",
-                    PetName = "Max",
-                    PetType = "Dog",
-                    ServiceName = "Nail & Paw Care",
-                    AppointmentDate = DateTime.Today.AddDays(2),
-                    Status = "Completed"
-                },
-
-                new Appointment
-                {
-                    Id = 4,
-                    CustomerName = "Pham Thi D",
-                    Phone = "0934567890",
-                    PetName = "Kitty",
-                    PetType = "Cat",
-                    ServiceName = "Bath & Cleaning",
-                    AppointmentDate = DateTime.Today.AddDays(3),
-                    Status = "Cancelled"
-                }
-            };
+            _appointments = new ObservableCollection<Appointment>(_appointmentService.GetAppointment()); 
 
             _appointmentView =
                 CollectionViewSource.GetDefaultView(_appointments);
@@ -108,7 +62,8 @@ namespace QuanLy.Views.Pages
                     string.IsNullOrWhiteSpace(keyword) ||
                     appointment.CustomerName.ToLower().Contains(keyword) ||
                     appointment.PetName.ToLower().Contains(keyword) ||
-                    appointment.Phone.Contains(keyword);
+                    appointment.Phone.Contains(keyword) ||
+                    appointment.PetType.ToLower().Contains(keyword);
 
                 bool matchesStatus =
                     status == "All Status" ||

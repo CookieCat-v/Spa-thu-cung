@@ -1,4 +1,5 @@
 ﻿using QuanLy.Models;
+using QuanLy.ViewModels;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,9 +18,11 @@ namespace QuanLy
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow(User user, IServiceProvider services)
+        
+        public MainWindow(User user, IServiceProvider services,CustomerDashboardViewModel vm)
         {
             InitializeComponent();
+            DataContext = vm;
         }
     }
 }
