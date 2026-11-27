@@ -1,0 +1,61 @@
+2026-11-25 10:42:31.853 [INF] QuanLy.App: Application started.
+2026-11-25 10:42:59.495 [INF] QuanLy.App: Application started.
+2026-11-25 10:43:02.602 [ERR] : Log in failed
+2026-11-25 10:43:05.037 [ERR] : Log in failed
+2026-11-25 10:43:19.654 [INF] QuanLy.App: Application started.
+2026-11-25 10:43:22.168 [ERR] : Log in failed
+2026-11-25 10:47:59.503 [INF] QuanLy.App: Application started.
+2026-11-25 10:48:02.405 [INF] : customer01 logged in
+2026-11-25 10:49:48.556 [INF] QuanLy.App: Application started.
+2026-11-25 10:49:50.907 [ERR] : Log in failed
+2026-11-25 10:52:00.373 [INF] QuanLy.App: Application started.
+2026-11-25 10:52:02.603 [INF] : customer01 logged in
+2026-11-25 10:52:50.212 [INF] QuanLy.App: Application started.
+2026-11-25 10:52:52.406 [INF] : customer01 logged in
+2026-11-25 10:59:48.867 [INF] QuanLy.App: Application started.
+2026-11-25 11:00:12.210 [INF] QuanLy.App: Application started.
+2026-11-25 11:01:01.032 [INF] QuanLy.App: Application started.
+2026-11-25 11:02:12.864 [INF] QuanLy.App: Application started.
+2026-11-25 11:03:59.483 [INF] QuanLy.App: Application started.
+2026-11-25 11:08:54.095 [INF] QuanLy.App: Application started.
+2026-11-25 11:13:11.619 [INF] QuanLy.App: Application started.
+2026-11-25 11:13:56.933 [INF] QuanLy.App: Application started.
+2026-11-25 11:17:44.112 [INF] QuanLy.App: Application started.
+2026-11-25 11:19:09.827 [INF] QuanLy.App: Application started.
+2026-11-25 11:20:35.358 [INF] QuanLy.App: Application started.
+2026-11-25 11:22:09.106 [INF] QuanLy.App: Application started.
+2026-11-25 11:22:44.008 [INF] QuanLy.App: Application started.
+2026-11-25 11:29:05.318 [INF] QuanLy.App: Application started.
+2026-11-25 11:29:12.592 [ERR] : Log in failed
+2026-11-25 11:29:51.801 [INF] QuanLy.App: Application started.
+2026-11-25 11:29:58.402 [INF] : clerk01 logged in
+2026-11-25 11:41:03.173 [INF] QuanLy.App: Application started.
+2026-11-25 11:46:59.499 [INF] QuanLy.App: Application started.
+2026-11-25 11:47:06.159 [INF] : clerk01 logged in
+2026-11-25 11:48:52.706 [INF] QuanLy.App: Application started.
+2026-11-25 11:49:01.104 [INF] : clerk01 logged in
+2026-11-25 11:49:43.496 [INF] QuanLy.App: Application started.
+2026-11-25 11:49:48.691 [INF] : clerk01 logged in
+2026-11-25 11:50:01.863 [INF] QuanLy.App: Application started.
+2026-11-25 11:50:07.503 [INF] : clerk01 logged in
+2026-11-25 11:53:23.543 [INF] QuanLy.App: Application started.
+2026-11-25 11:53:29.485 [INF] : clerk01 logged in
+2026-11-25 11:55:04.970 [INF] QuanLy.App: Application started.
+2026-11-25 11:55:40.422 [INF] QuanLy.App: Application started.
+2026-11-25 11:55:46.674 [INF] : clerk01 logged in
+2026-11-25 12:10:26.806 [INF] QuanLy.App: Application started.
+2026-11-25 12:10:43.055 [INF] QuanLy.App: Application started.
+2026-11-25 12:10:50.168 [INF] : clerk01 logged in
+2026-11-25 12:12:34.458 [INF] QuanLy.App: Application started.
+2026-11-25 12:12:51.217 [INF] QuanLy.App: Application started.
+2026-11-25 12:12:57.064 [INF] : clerk01 logged in
+2026-11-25 12:13:50.521 [INF] QuanLy.App: Application started.
+2026-11-25 12:13:55.685 [INF] : clerk01 logged in
+2026-11-25 12:15:20.255 [INF] QuanLy.App: Application started.
+2026-11-25 12:15:25.654 [INF] : clerk01 logged in
+2026-11-25 12:16:14.344 [INF] QuanLy.App: Application started.
+2026-11-25 12:16:19.304 [INF] : clerk01 logged in
+2026-11-25 12:17:04.198 [INF] QuanLy.App: Application started.
+2026-11-25 12:17:11.143 [INF] : clerk01 logged in
+2026-11-25 12:19:30.981 [INF] QuanLy.App: Application started.
+2026-11-25 12:19:38.124 [INF] : clerk01 logged in

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET10_0;NETCOREAPP;WINDOWS;WINDOWS7_0;NET5_0_OR_GREATER;NET6_0_OR_GREATER;NET7_0_OR_GREATER;NET8_0_OR_GREATER;NET9_0_OR_GREATER;NET10_0_OR_GREATER;NETCOREAPP3_0_OR_GREATER;NETCOREAPP3_1_OR_GREATER;WINDOWS7_0_OR_GREATER
 D:\study\IT008\Spa thu cung\QuanLy\App.xaml
-2-1597514993
+7850733201
 221862028742
-111895718177
-209-900007175
-Views\Dashboard.xaml;Views\LoginWindow.xaml;
+32-241194587
+231-330985076
+Views\AppopintmentDetailWindow.xaml;Views\CustomerDashboard.xaml;Views\LoginWindow.xaml;Views\MainMenu.xaml;Views\Pages\AppointmentPage.xaml;Views\Pages\DashboardPage.xaml;Views\Pages\PetPage.xaml;
 
-True
+False
 

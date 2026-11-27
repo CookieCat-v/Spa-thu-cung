@@ -1,0 +1,251 @@
+﻿<Window x:Class="QuanLy.Views.AppopintmentDetailWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Appointment Details"
+        Height="760"
+        Width="650"
+        MinHeight="600"
+        WindowStartupLocation="CenterOwner"
+        Background="#F7F5FA">
+
+    <Window.Resources>
+        <Style TargetType="TextBox"
+               BasedOn="{StaticResource MaterialDesignOutlinedTextBox}">
+            <Setter Property="Margin" Value="0,5,0,15"/>
+        </Style>
+
+        <Style TargetType="ComboBox"
+               BasedOn="{StaticResource MaterialDesignOutlinedComboBox}">
+            <Setter Property="Margin" Value="0,5,0,15"/>
+        </Style>
+
+        <Style TargetType="DatePicker"
+               BasedOn="{StaticResource MaterialDesignOutlinedDatePicker}">
+            <Setter Property="Margin" Value="0,5,0,15"/>
+        </Style>
+    </Window.Resources>
+
+    <Grid Margin="25">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- HEADER -->
+        <StackPanel Grid.Row="0" Margin="0,0,0,20">
+            <StackPanel Orientation="Horizontal">
+                <materialDesign:PackIcon
+                    Kind="CalendarEdit"
+                    Width="32"
+                    Height="32"
+                    Foreground="#8064A2"
+                    VerticalAlignment="Center"/>
+
+                <TextBlock Text="Appointment Details"
+                           FontSize="25"
+                           FontWeight="Bold"
+                           Foreground="#8064A2"
+                           Margin="12,0,0,0"
+                           VerticalAlignment="Center"/>
+            </StackPanel>
+
+            <TextBlock Text="Manage customer, pet and appointment information"
+                       Foreground="Gray"
+                       Margin="44,5,0,0"/>
+        </StackPanel>
+
+        <!-- CONTENT -->
+        <ScrollViewer Grid.Row="1"
+                      VerticalScrollBarVisibility="Auto">
+
+            <StackPanel>
+
+                <!-- CUSTOMER CARD -->
+                <materialDesign:Card Padding="20"
+                                     Margin="0,0,0,15"
+                                     UniformCornerRadius="12"
+                                     Background="White">
+
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,0,0,15">
+
+                            <materialDesign:PackIcon
+                                Kind="Account"
+                                Width="24"
+                                Height="24"
+                                Foreground="#8064A2"/>
+
+                            <TextBlock Text="Customer Information"
+                                       FontSize="17"
+                                       FontWeight="SemiBold"
+                                       Margin="10,0,0,0"
+                                       VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <TextBox
+                            Text="{Binding CustomerName,
+                                   UpdateSourceTrigger=PropertyChanged}"
+                            materialDesign:HintAssist.Hint="Customer Name"/>
+
+                        <TextBox
+                            Text="{Binding Phone,
+                                   UpdateSourceTrigger=PropertyChanged}"
+                            materialDesign:HintAssist.Hint="Phone Number"/>
+
+                        <TextBox
+                            Text="{Binding CustomerId, Mode=OneWay}"
+                            IsReadOnly="True"
+                            materialDesign:HintAssist.Hint="Customer ID"/>
+                    </StackPanel>
+                </materialDesign:Card>
+
+                <!-- PET CARD -->
+                <materialDesign:Card Padding="20"
+                                     Margin="0,0,0,15"
+                                     UniformCornerRadius="12"
+                                     Background="White">
+
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,0,0,15">
+
+                            <materialDesign:PackIcon
+                                Kind="Paw"
+                                Width="24"
+                                Height="24"
+                                Foreground="#8064A2"/>
+
+                            <TextBlock Text="Pet Information"
+                                       FontSize="17"
+                                       FontWeight="SemiBold"
+                                       Margin="10,0,0,0"
+                                       VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <TextBox
+                            Text="{Binding PetName,
+                                   UpdateSourceTrigger=PropertyChanged}"
+                            materialDesign:HintAssist.Hint="Pet Name"/>
+
+                        <ComboBox
+                            SelectedValue="{Binding PetType,
+                                           UpdateSourceTrigger=PropertyChanged}"
+                            SelectedValuePath="Content"
+                            materialDesign:HintAssist.Hint="Pet Type">
+
+                            <ComboBoxItem Content="Dog"/>
+                            <ComboBoxItem Content="Cat"/>
+                            <ComboBoxItem Content="Other"/>
+                        </ComboBox>
+
+                        <TextBox
+                            Text="{Binding PetId, Mode=OneWay}"
+                            IsReadOnly="True"
+                            materialDesign:HintAssist.Hint="Pet ID"/>
+                    </StackPanel>
+                </materialDesign:Card>
+
+                <!-- APPOINTMENT CARD -->
+                <materialDesign:Card Padding="20"
+                                     Margin="0,0,0,10"
+                                     UniformCornerRadius="12"
+                                     Background="White">
+
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal"
+                                    Margin="0,0,0,15">
+
+                            <materialDesign:PackIcon
+                                Kind="CalendarClock"
+                                Width="24"
+                                Height="24"
+                                Foreground="#8064A2"/>
+
+                            <TextBlock Text="Appointment Information"
+                                       FontSize="17"
+                                       FontWeight="SemiBold"
+                                       Margin="10,0,0,0"
+                                       VerticalAlignment="Center"/>
+                        </StackPanel>
+
+                        <TextBox
+                            Text="{Binding ServiceName,
+                                   UpdateSourceTrigger=PropertyChanged}"
+                            materialDesign:HintAssist.Hint="Service Name"/>
+
+                        <DatePicker
+                            SelectedDate="{Binding AppointmentDate,
+                                            UpdateSourceTrigger=PropertyChanged}"
+                            
+                            materialDesign:HintAssist.Hint="Appointment Date"/>
+                        <ComboBox
+   SelectedValuePath="Content"
+SelectedValue="{Binding Status,UpdateSourceTrigger=PropertyChanged}"
+    ToolTip="Status">
+                            <ComboBoxItem Content="Pending"/>
+                            <ComboBoxItem Content="Confirmed"/>
+                            <ComboBoxItem Content="Completed"/>
+                            <ComboBoxItem Content="Cancelled"/>
+                        </ComboBox>
+                        <TextBox
+                            Text="{Binding Notes,
+                                   UpdateSourceTrigger=PropertyChanged}"
+                            materialDesign:HintAssist.Hint="Notes"
+                            AcceptsReturn="True"
+                            TextWrapping="Wrap"
+                            MinHeight="100"
+                            VerticalContentAlignment="Top"/>
+                    </StackPanel>
+                </materialDesign:Card>
+
+            </StackPanel>
+        </ScrollViewer>
+
+        <!-- FOOTER BUTTONS -->
+        <Grid Grid.Row="2" Margin="0,15,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Button Grid.Column="0"
+                    Command="{Binding DeleteCommand}"
+                    Style="{StaticResource MaterialDesignRaisedButton}"
+                    Background="#D9534F"
+                    Foreground="White"
+                    Height="45"
+                    Margin="0,0,8,0">
+
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon
+                        Kind="Delete"
+                        VerticalAlignment="Center"/>
+
+                    <TextBlock Text="Delete Appointment"
+                               Margin="8,0,0,0"/>
+                </StackPanel>
+            </Button>
+
+            <Button Grid.Column="1"
+                    Command="{Binding SaveCommand}"
+                    Style="{StaticResource MaterialDesignRaisedButton}"
+                    Background="#8064A2"
+                    Foreground="White"
+                    Height="45"
+                    Margin="8,0,0,0">
+
+                <StackPanel Orientation="Horizontal">
+                    <materialDesign:PackIcon
+                        Kind="ContentSave"
+                        VerticalAlignment="Center"/>
+
+                    <TextBlock Text="Save Changes"
+                               Margin="8,0,0,0"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+    </Grid>
+</Window>

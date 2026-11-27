@@ -1,0 +1,229 @@
+﻿<Page x:Class="QuanLy.Views.Pages.PetPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      Background="#F7F6FA">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="30">
+
+            <!-- HEADER -->
+            <Grid Margin="0,0,0,25">
+                <StackPanel>
+                    <TextBlock Text="Pets"
+                               FontSize="28"
+                               FontWeight="Bold"
+                               Foreground="#302B3D"/>
+
+                    <TextBlock Text="Manage all pets registered at PawSpa."
+                               Foreground="#888888"
+                               Margin="0,5,0,0"/>
+                </StackPanel>
+
+                <Button Content="+ Add New Pet"
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Center"
+                        Style="{StaticResource MaterialDesignRaisedButton}"
+                        Background="#8064A2"
+                        Foreground="White"
+                        FontSize="8"
+                        Padding="10"
+                        />
+            </Grid>
+
+            <!-- STATISTICS -->
+            <UniformGrid Columns="3"
+                         Margin="0,0,0,25">
+
+                <Border Background="White"
+                        CornerRadius="12"
+                        Padding="20"
+                        Margin="0,0,12,0">
+
+                    <StackPanel>
+                        <TextBlock Text="Total Pets"
+                                   Foreground="#888888"/>
+
+                        <TextBlock x:Name="TotalPetsText"
+                                   Text="0"
+                                   FontSize="28"
+                                   FontWeight="Bold"
+                                   Foreground="#8064A2"
+                                   Margin="0,8"/>
+                    </StackPanel>
+                </Border>
+
+                
+
+            </UniformGrid>
+
+            <!-- SEARCH AND FILTER -->
+            <Border Background="White"
+                    CornerRadius="12"
+                    Padding="18"
+                    Margin="0,0,0,25">
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <TextBox x:Name="SearchTextBox"
+                             Grid.Column="0"
+                             Style="{StaticResource MaterialDesignOutlinedTextBox}"
+                             ToolTip="Search pet or owner..."
+                             
+                             Margin="0,0,15,0"/>
+
+                    <ComboBox x:Name="PetTypeFilter"
+                              Grid.Column="1"
+                              Style="{StaticResource MaterialDesignOutlinedComboBox}"
+                              SelectedIndex="0"
+                              >
+
+                        <ComboBoxItem Content="All Pets"/>
+                        <ComboBoxItem Content="Dog"/>
+                        <ComboBoxItem Content="Cat"/>
+                        <ComboBoxItem Content="Other"/>
+
+                    </ComboBox>
+                </Grid>
+            </Border>
+
+            <!-- PET LIST HEADER -->
+            <TextBlock Text="Registered Pets"
+                       FontSize="20"
+                       FontWeight="Bold"
+                       Margin="0,0,0,15"/>
+
+            <!-- PET CARDS -->
+            <ItemsControl x:Name="PetsItemsControl">
+
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <WrapPanel/>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+
+                        <Border Width="270"
+                                Background="White"
+                                CornerRadius="15"
+                                Padding="18"
+                                Margin="0,0,18,18">
+
+                            <StackPanel>
+
+                                <!-- PET IMAGE / ICON -->
+                                <Border Height="125"
+                                        Background="#F0EAF7"
+                                        CornerRadius="12"
+                                        Margin="0,0,0,15">
+
+                                    <TextBlock Text="{Binding PetEmoji}"
+                                               FontSize="65"
+                                               HorizontalAlignment="Center"
+                                               VerticalAlignment="Center"/>
+                                </Border>
+
+                                <!-- PET NAME -->
+                                <TextBlock Text="{Binding Name}"
+                                           FontSize="19"
+                                           FontWeight="Bold"
+                                           Foreground="#302B3D"/>
+
+                                <TextBlock Text="{Binding PetType}"
+                                           Foreground="#8064A2"
+                                           FontWeight="SemiBold"
+                                           Margin="0,4,0,12"/>
+
+                                <Separator/>
+
+                                <!-- PET DETAILS -->
+                                <Grid Margin="0,12,0,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Text="Breed"
+                                               Foreground="#999999"/>
+
+                                    <TextBlock Grid.Column="1"
+                                               Text="{Binding Breed}"
+                                               HorizontalAlignment="Right"/>
+                                </Grid>
+
+                                <Grid Margin="0,5">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Text="Age"
+                                               Foreground="#999999"/>
+
+                                    <TextBlock Grid.Column="1"
+                                               Text="{Binding Age}"
+                                               HorizontalAlignment="Right"/>
+                                </Grid>
+
+                                <Grid Margin="0,5,0,12">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Text="Owner"
+                                               Foreground="#999999"/>
+
+                                    <TextBlock Grid.Column="1"
+                                               Text="{Binding OwnerName}"
+                                               HorizontalAlignment="Right"/>
+                                </Grid>
+
+                                <Separator/>
+
+                                <!-- ACTIONS -->
+                                <Grid Margin="0,12,0,0">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Button Content="View Details"
+                                            Style="{StaticResource MaterialDesignOutlinedButton}"
+                                            Margin="0,0,5,0"
+                                            />
+
+                                    <Button Grid.Column="1"
+                                            Content="Edit"
+                                            Style="{StaticResource MaterialDesignRaisedButton}"
+                                            Background="#8064A2"
+                                            Foreground="White"
+                                            Margin="5,0,0,0"
+                                            />
+                                </Grid>
+
+                            </StackPanel>
+                        </Border>
+
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+
+            </ItemsControl>
+
+            <TextBlock x:Name="EmptyMessage"
+                       Text="No pets found."
+                       Foreground="#999999"
+                       FontSize="16"
+                       HorizontalAlignment="Center"
+                       Margin="0,20"
+                       Visibility="Collapsed"/>
+
+        </StackPanel>
+    </ScrollViewer>
+</Page>

@@ -1,0 +1,154 @@
+﻿<Page x:Class="QuanLy.Views.Pages.DashboardPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Background="#F7F6FA">
+
+    <ScrollViewer VerticalScrollBarVisibility="Auto">
+        <StackPanel Margin="30">
+
+            <!-- HEADER -->
+            <TextBlock Text="Dashboard"
+                       FontSize="28"
+                       FontWeight="Bold"
+                       Foreground="#302B3D"/>
+
+            <TextBlock Text="Welcome back! Here's what's happening at PawSpa today."
+                       Foreground="#888888"
+                       Margin="0,5,0,25"/>
+
+            <!-- STATISTICS -->
+            <UniformGrid Columns="4"
+                         Margin="0,0,0,30">
+
+                <Border Background="White"
+                        CornerRadius="12"
+                        Padding="20"
+                        Margin="0,0,12,0">
+                    <StackPanel>
+                        <TextBlock Text="Total Appointments"
+                                   Foreground="#888888"/>
+                        <TextBlock Text="128"
+                                   FontSize="30"
+                                   FontWeight="Bold"
+                                   Foreground="#8064A2"
+                                   Margin="0,10"/>
+                        <TextBlock Text="All bookings"
+                                   Foreground="#999999"
+                                   FontSize="12"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="White"
+                        CornerRadius="12"
+                        Padding="20"
+                        Margin="4,0,8,0">
+                    <StackPanel>
+                        <TextBlock Text="Pending"
+                                   Foreground="#888888"/>
+                        <TextBlock Text="18"
+                                   FontSize="30"
+                                   FontWeight="Bold"
+                                   Foreground="#E6A23C"
+                                   Margin="0,10"/>
+                        <TextBlock Text="Awaiting confirmation"
+                                   Foreground="#999999"
+                                   FontSize="12"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="White"
+                        CornerRadius="12"
+                        Padding="20"
+                        Margin="8,0,4,0">
+                    <StackPanel>
+                        <TextBlock Text="Completed"
+                                   Foreground="#888888"/>
+                        <TextBlock Text="95"
+                                   FontSize="30"
+                                   FontWeight="Bold"
+                                   Foreground="#46A77B"
+                                   Margin="0,10"/>
+                        <TextBlock Text="Successfully served"
+                                   Foreground="#999999"
+                                   FontSize="12"/>
+                    </StackPanel>
+                </Border>
+
+                <Border Background="White"
+                        CornerRadius="12"
+                        Padding="20"
+                        Margin="12,0,0,0">
+                    <StackPanel>
+                        <TextBlock Text="Today"
+                                   Foreground="#888888"/>
+                        <TextBlock Text="12"
+                                   FontSize="30"
+                                   FontWeight="Bold"
+                                   Foreground="#5B91C9"
+                                   Margin="0,10"/>
+                        <TextBlock Text="Appointments today"
+                                   Foreground="#999999"
+                                   FontSize="12"/>
+                    </StackPanel>
+                </Border>
+
+            </UniformGrid>
+
+            <!-- RECENT APPOINTMENTS -->
+            <Border Background="White"
+                    CornerRadius="12"
+                    Padding="20">
+
+                <StackPanel>
+
+                    <Grid Margin="0,0,0,20">
+                        <TextBlock Text="Recent Appointments"
+                                   FontSize="20"
+                                   FontWeight="Bold"
+                                   Foreground="#302B3D"/>
+
+                        <Button Content="View All"
+                                HorizontalAlignment="Right"
+                                Style="{StaticResource MaterialDesignRaisedButton}"
+                                Foreground="White"/>
+                    </Grid>
+
+                    <DataGrid x:Name="RecentAppointmentsGrid"
+                              AutoGenerateColumns="False"
+                              IsReadOnly="True"
+                              CanUserAddRows="False"
+                              HeadersVisibility="Column"
+                              GridLinesVisibility="Horizontal"
+                              RowHeight="48"
+                              Background="White">
+
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Header="Customer"
+                                Binding="{Binding CustomerName}"
+                                Width="*"/>
+
+                            <DataGridTextColumn Header="Pet"
+                                Binding="{Binding PetName}"
+                                Width="*"/>
+
+                            <DataGridTextColumn Header="Service"
+                                Binding="{Binding ServiceName}"
+                                Width="1.5*"/>
+
+                            <DataGridTextColumn Header="Date"
+                                Binding="{Binding AppointmentDate, StringFormat={}{0:dd/MM/yyyy}}"
+                                Width="*"/>
+
+                            <DataGridTextColumn Header="Status"
+                                Binding="{Binding Status}"
+                                Width="*"/>
+                        </DataGrid.Columns>
+
+                    </DataGrid>
+
+                </StackPanel>
+            </Border>
+
+        </StackPanel>
+    </ScrollViewer>
+</Page>
