@@ -92,6 +92,7 @@
                           SelectionUnit="FullRow"
                           HeadersVisibility="Column"
                           GridLinesVisibility="Horizontal"
+                          SelectionChanged="AppointmentGrid_SelectionChanged"
                           RowHeight="55"
                           Background="White"
                           >

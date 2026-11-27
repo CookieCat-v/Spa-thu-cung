@@ -38,8 +38,7 @@ namespace QuanLy.ViewModels
             if (parameter is not string page) return;
             SelectedPage = page;
 
-            if (page == "Logout")
-                return;
+           
 
             NavigationRequested?.Invoke(page);
         }

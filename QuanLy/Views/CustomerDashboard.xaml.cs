@@ -24,5 +24,21 @@ namespace QuanLy
             InitializeComponent();
             DataContext = vm;
         }
+
+        private void Click_Home(object sender, RoutedEventArgs e)
+        {
+            main_scroll.ScrollToHome();
+        }
+
+        private void Click_Services(object sender, RoutedEventArgs e)
+        {
+            main_scroll.ScrollToVerticalOffset(225);
+        }
+
+        private void Click_Appointment(object sender, RoutedEventArgs e)
+        {
+            main_scroll.ScrollToBottom();
+        }
     }
+    
 }

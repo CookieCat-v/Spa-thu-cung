@@ -1,5 +1,7 @@
-﻿using QuanLy.Models;
+﻿using Microsoft.Extensions.DependencyInjection;
+using QuanLy.Models;
 using QuanLy.Services;
+using QuanLy.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -24,13 +26,13 @@ namespace QuanLy.Views.Pages
     {
         private ObservableCollection<Appointment> _appointments;
         private ICollectionView _appointmentView;
-       
+        private readonly IServiceProvider _services;
         private readonly AppointmentService _appointmentService;
 
-        public AppointmentPage( AppointmentService appointmentService )
+        public AppointmentPage( AppointmentService appointmentService , IServiceProvider services)
         {
             InitializeComponent();
-  
+            _services = services;
             _appointmentService = appointmentService;
             LoadAppointments();
         }
@@ -43,6 +45,20 @@ namespace QuanLy.Views.Pages
                 CollectionViewSource.GetDefaultView(_appointments);
 
             AppointmentGrid.ItemsSource = _appointmentView;
+        }
+        private void OpenAppointmentDetail(Appointment appointment)
+        {
+            var vm = ActivatorUtilities.CreateInstance<
+                   AppointmentDetailViewModel>(
+                       _services,
+                       appointment);
+
+            var window = new AppopintmentDetailWindow(vm);
+
+            window.Owner = Application.Current.MainWindow;
+            window.ShowDialog();
+
+            LoadAppointments();
         }
 
         private void ApplyFilter()
@@ -95,6 +111,7 @@ namespace QuanLy.Views.Pages
             StatusFilter.SelectedIndex = 0;
 
             ApplyFilter();
+         
         }
 
         private void AppointmentGrid_SelectionChanged(
@@ -102,7 +119,8 @@ namespace QuanLy.Views.Pages
         {
             if (AppointmentGrid.SelectedItem is Appointment appointment)
             {
-                // You can open an appointment detail window here.
+                
+                OpenAppointmentDetail(appointment);
             }
         }
     }

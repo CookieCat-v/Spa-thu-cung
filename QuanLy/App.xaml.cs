@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using QuanLy.Data;
 using QuanLy.Services;
@@ -39,7 +40,8 @@ namespace QuanLy
         {
             using (var context = new AppDbContext())
             {
-                context.Database.EnsureCreated();
+                context.Database.Migrate();
+              
             }
             var logDir = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Log");
 
@@ -63,13 +65,14 @@ namespace QuanLy
 
 
             RegisteredGlobalExceptionHandler();
+            services.AddSingleton<IWindowService, WindowService>();
 
-            
             services.AddSingleton<Authentication>();
             services.AddSingleton<AppointmentService>();
             //services.AddTransient<ValidatableViewModel>();
             services.AddTransient<CustomerDashboardViewModel>();
-
+            services.AddTransient<AppointmentDetailViewModel>();
+            services.AddTransient<AppopintmentDetailWindow>();
             services.AddTransient<MainMenuViewModel>();
             services.AddTransient<LoginViewModel>();
             services.AddTransient<MainWindow>();

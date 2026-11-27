@@ -47,6 +47,7 @@
 
                     <Button Content="Home"
                             Style="{StaticResource SidebarButtonStyle}"
+                            Click="Click_Home"
                             Background="LightSeaGreen"
                             Foreground="#263238"
                             HorizontalContentAlignment="Left"
@@ -57,6 +58,7 @@
                             Background="LightSeaGreen"
                             Foreground="#263238"
                             Style="{StaticResource SidebarButtonStyle}"
+                            Click="Click_Services"
                             HorizontalContentAlignment="Left"
                             Padding="5"
                             Margin="0,0,0,5"/>
@@ -64,6 +66,7 @@
                     <Button Content="Book an appointments"
                             Background="LightSeaGreen"
                             Foreground="#263238"
+                            Click="Click_Appointment"
                             Style="{StaticResource SidebarButtonStyle}"
                             HorizontalContentAlignment="Left"
                             Padding="5"
@@ -77,12 +80,14 @@
 
                 <StackPanel DockPanel.Dock="Bottom"
                             Margin="0,20">
-
+                
                     <Separator Margin="0,0,0,15"/>
 
                     <Button Content="Log out"
-                            Style="{StaticResource MaterialDesignFlatButton}"
-                            
+                            Style="{StaticResource SidebarButtonStyle}"
+                            Background="LightSeaGreen"
+                            Foreground="#263238"
+                            Command="{Binding LogOutCommand}"
                             HorizontalContentAlignment="Left"
                             Padding="15"/>
 
@@ -93,6 +98,7 @@
 
         <!-- MAIN CONTENT -->
         <ScrollViewer Grid.Column="1"
+                      x:Name="main_scroll"
                       VerticalScrollBarVisibility="Auto">
 
             <StackPanel Margin="30">
@@ -184,8 +190,9 @@
                 FontWeight="Bold"
                 Foreground="#302B3D"
                 Margin="0,0,0,5"/>
-                <TextBlock Text="Insert flavor text here"
-                 Foreground="Black"
+                <TextBlock Text="Bạn đang tìm kiếm một dịch vụ Pet Spa uy tín tại TpHCM để Boss của bạn được chăm sóc một cách chuyên nghiệp và tận tâm? Hãy ghé ngay PawSpa, nơi cung cấp các gói spa từ cơ bản đến cao cấp, mang đến vẻ ngoài hoàn hảo và sức khỏe tốt nhất cho bé cưng nhà bạn. "
+                 TextWrapping="Wrap"
+                           Foreground="Black"
                  FontSize="15"
                  Margin="0,0,0,20"/>
                 <!-- SERVICES -->

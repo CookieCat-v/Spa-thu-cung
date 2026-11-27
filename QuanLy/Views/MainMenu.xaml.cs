@@ -1,5 +1,6 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using QuanLy.Models;
+using QuanLy.Services;
 using QuanLy.ViewModels;
 using QuanLy.Views.Pages;
 using System;
@@ -25,12 +26,14 @@ namespace QuanLy.Views
     public partial class MainMenu : Window
     {
         private readonly MainMenuViewModel _vm;
+        private readonly IWindowService _windowService;
         private readonly IServiceProvider _services;
-        public MainMenu(User user, IServiceProvider services, MainMenuViewModel vm)
+        public MainMenu(User user, IServiceProvider services, MainMenuViewModel vm, IWindowService windowService)
         {
             InitializeComponent();
             _vm = vm;
             _services = services;
+            _windowService = windowService;
             DataContext = _vm;
             _vm.NavigationRequested += NavigateToPage;
              MainFrame.Navigate(services.GetRequiredService<DashboardPage>());
@@ -65,7 +68,7 @@ namespace QuanLy.Views
        
         private void Logout()
         {
-            MessageBox.Show("log out");
+            _windowService.ShowLoginWindow();
         }
         protected override void OnClosed(EventArgs e)
         {
