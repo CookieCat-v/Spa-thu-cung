@@ -27,7 +27,7 @@
                     <StackPanel>
                         <TextBlock Text="Total Appointments"
                                    Foreground="#888888"/>
-                        <TextBlock Text="128"
+                        <TextBlock Text="0"
                                    FontSize="30"
                                    FontWeight="Bold"
                                    Foreground="#8064A2"
@@ -45,7 +45,7 @@
                     <StackPanel>
                         <TextBlock Text="Pending"
                                    Foreground="#888888"/>
-                        <TextBlock Text="18"
+                        <TextBlock Text="0"
                                    FontSize="30"
                                    FontWeight="Bold"
                                    Foreground="#E6A23C"
@@ -63,7 +63,7 @@
                     <StackPanel>
                         <TextBlock Text="Completed"
                                    Foreground="#888888"/>
-                        <TextBlock Text="95"
+                        <TextBlock Text="0"
                                    FontSize="30"
                                    FontWeight="Bold"
                                    Foreground="#46A77B"
@@ -81,7 +81,8 @@
                     <StackPanel>
                         <TextBlock Text="Today"
                                    Foreground="#888888"/>
-                        <TextBlock Text="12"
+                        
+                        <TextBlock Text="0"
                                    FontSize="30"
                                    FontWeight="Bold"
                                    Foreground="#5B91C9"
@@ -107,10 +108,7 @@
                                    FontWeight="Bold"
                                    Foreground="#302B3D"/>
 
-                        <Button Content="View All"
-                                HorizontalAlignment="Right"
-                                Style="{StaticResource MaterialDesignRaisedButton}"
-                                Foreground="White"/>
+                        
                     </Grid>
 
                     <DataGrid x:Name="RecentAppointmentsGrid"
